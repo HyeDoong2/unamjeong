@@ -209,7 +209,7 @@ background: #3c6b48;
 
 
 
-/* 대표메뉴 리스트 */
+/* menu */
 
 .menu-list {
   display: flex;
@@ -284,6 +284,7 @@ background: #3c6b48;
   margin: 50px auto;
   border-radius: 10px;
   background-color: #fafafa;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.4);
 }
 
 .info-wrap {

@@ -29,7 +29,9 @@
 
   /* 메뉴 2개씩 */
   .menu-list {
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .menu-card {
@@ -96,7 +98,7 @@
   }
 
   #gnb ul li a {
-    font-size: 18px;
+    font-size: 15px;
   }
 
   /* banner */
@@ -140,7 +142,8 @@
 
   /* swiper */
   .swiper {
-    height: 250px;
+    width: 100%;
+    height: auto;
   }
 
 
