@@ -20,7 +20,7 @@
       <div class="container">
         <h1><a href="index.html">운암정</a></h1>
 
-        <nav id="gnb"> 
+        <nav id="gnb">
           <ul>
             <li><a href="menu.html">메뉴</a></li>
             <li><a href="reservation.html">예약안내</a></li>
@@ -135,14 +135,19 @@
             spaceBetween: 20,
 
             breakpoints: {
-              1024: {
-                slidesPerView: 3.5,
+              0: {
+                slidesPerView: 1,
+                centeredSlides: false, // 👈 핵심
+              },
+              450: {
+                slidesPerView: 1.5,
+                centeredSlides: true,
               },
               768: {
-                slidesPerView: 2.2,
+                slidesPerView: 2.5,
               },
-              480: {
-                slidesPerView: 1.3,
+              1024: {
+                slidesPerView: 3.5,
               }
             },
 

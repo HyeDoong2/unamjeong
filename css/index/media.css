@@ -45,7 +45,8 @@
 
   /* swiper */
   .swiper {
-    height: 300px;
+    width: 100%;
+    height: auto;
   }
 
   
@@ -154,7 +155,8 @@
   }
 
   .info-text {
-    padding: 20px;
+    padding: 40px;
+    text-align: center;
   }
 
   .info-text h2 {
@@ -162,7 +164,7 @@
   }
 
   .info-text p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.8;
   }
 
@@ -237,3 +239,11 @@
   }
 
 }
+
+@media (max-width: 350px) {
+  .info-text p{
+    font-size: 14px;
+  }
+
+}
+
