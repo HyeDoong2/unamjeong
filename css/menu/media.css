@@ -1,0 +1,294 @@
+@charset "utf-8";
+
+
+@media (max-width :1171px){
+
+  .menu-tab li a {
+    font-size: 28px;
+    padding: 0 20px;
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+
+  .container {
+    padding: 15px 30px;
+  }
+
+  /* 배너 */
+  .banner {
+    height: 520px;
+  }
+
+
+  .banner .btn {
+    font-size: 20px;
+    padding: 15px 35px;
+  }
+
+  .banner .txt {
+    font-size: 16px;
+  }
+
+  /* 상단 탭 */
+  .menu-tab {
+    gap: 10px;
+  }
+
+  .menu-tab li a {
+    font-size: 22px;
+    padding: 0 20px;
+  }
+
+  /* 서브탭 */
+  .sub-tab li button {
+    font-size: 24px;
+  }
+
+  .menu-item span {
+    font-size: 30px;
+  }
+
+  .desc {
+    font-size: 16px;
+  }
+
+  .price-row .unit {
+    font-size: 18px;
+  }
+
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+  .container {
+    padding: 15px 20px;
+  }
+
+  /* 배너 */
+  .banner {
+    height: 420px;
+  }
+
+  .banner .title {
+    font-size: 60px;
+  }
+
+  .banner .btn {
+    font-size: 18px;
+    padding: 12px 25px;
+  }
+
+  .banner .txt {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .banner .txt span {
+    display: block;
+  }
+
+  /* 상단 탭 (가로 스크롤) */
+  .menu-tab {
+  justify-content: center; 
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 15px 10px;
+  }
+
+  .menu-tab li {
+    flex: 0 0 auto;
+  }
+
+  .menu-tab li a {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  /* 서브탭 */
+  .sub-tab {
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+
+  .sub-tab li button {
+    font-size: 20px;
+  }
+
+  /* 메뉴 리스트 */
+  .menu-list {
+    padding: 20px;
+  }
+  
+
+.menu-item {
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+
+  .menu-item span {
+    font-size: 30px;
+  }
+
+  .name {
+  white-space: nowrap;
+}
+.line {
+  flex: 1;
+  border-bottom: 1px dotted #aaa;
+  margin: 0 10px;
+}
+  
+
+  /* 가격 */
+.price {
+  white-space: nowrap;
+}
+
+  /* 설명 */
+  .desc {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  /* 복수 가격 */
+  .price-box {
+    align-items: flex-start;
+    margin-top: 5px;
+    line-height: 1.8em;
+  }
+
+  .price-row {
+    gap: 5px;
+  }
+
+  .price-row .unit {
+    font-size: 14px;
+  }
+
+}
+
+
+
+
+
+@media (max-width: 503px) {
+
+  .menu-tab {
+  justify-content: flex-start; /* center → 변경 */
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 15px 10px;
+  }
+  
+}
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+  /* 배너 */
+  .banner {
+    height: 320px;
+  }
+
+  .banner .title {
+    font-size: 24px;
+  }
+
+  .banner .btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .banner .txt {
+    font-size: 12px;
+  }
+
+  /* 탭 */
+  .menu-tab li a {
+    font-size: 16px;
+  }
+
+  /* 서브탭 */
+  .sub-tab li button {
+    font-size: 18px;
+  }
+
+  .menu-item {
+      line-height: 2em;
+  }
+
+  .menu-item .name {
+    font-size: 28px;
+  }
+
+  .block {
+    display: block;
+    font-size: 26px !important;
+  }
+
+  .menu-item .price {
+    font-size: 22px;
+  }  
+
+
+
+  .desc {
+    font-size: 12px;
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 393px) {
+.menu-item span {
+  font-size: 16px;
+}
+
+.price-box {
+  line-height: 1.5em;
+}
+  .menu-item .name {
+    font-size: 24px;
+  }
+
+
+.price-row .unit {
+  font-size: 12px;
+}
+
+  .menu-item .price {
+    font-size: 16px;
+  }
+
+  .desc {
+    font-size: 10px;
+  }
+
+
+}

@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background: rgba(244, 240, 236, 0.8);
+  backdrop-filter: blur(5px);
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+header h1 {
+  font: normal 50px "Shilla";
+}
+
+#gnb ul {
+  display: flex;
+  gap: 15px;
+}
+
+#gnb ul li a {
+  position: relative;
+  font-size: 22px;
+}
+
+#gnb ul li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+
+  width: 0;
+  height: 2px;
+  background: #554941;
+
+  transition: 0.4s ease;
+}
+
+#gnb ul li a:hover::before {
+  width: 100%;
+}
+
+
+
+/* header media */
+
+@media (max-width: 1024px) {
+
+
+  header h1 {
+    font-size: 40px;
+  }
+
+  #gnb ul li a {
+    font-size: 18px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  /* header */
+  header .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #gnb ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  #gnb ul li a {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  header h1 {
+    font-size: 32px;
+  }
+  
+}

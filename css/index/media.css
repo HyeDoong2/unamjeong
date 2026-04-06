@@ -1,8 +1,5 @@
 @charset "utf-8";
 
-/* =========================
-  태블릿 (1024px 이하)
-========================= */
 
 
 @media (max-width: 1210px){
@@ -15,15 +12,6 @@
 
   .container {
     padding: 15px 30px;
-  }
-
-
-  header h1 {
-    font-size: 40px;
-  }
-
-  #gnb ul li a {
-    font-size: 18px;
   }
 
 
@@ -46,7 +34,7 @@
   /* swiper */
   .swiper {
     width: 100%;
-    height: auto;
+    height: 300px;
   }
 
   
@@ -82,25 +70,10 @@
 
 }
 
-/* =========================
-  모바일 (768px 이하)
-========================= */
+
+
+
 @media (max-width: 768px) {
-
-  /* header */
-  header .container {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  #gnb ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  #gnb ul li a {
-    font-size: 15px;
-  }
 
   /* banner */
   .banner {
@@ -144,7 +117,7 @@
   /* swiper */
   .swiper {
     width: 100%;
-    height: auto;
+    height: 300px;
   }
 
 
@@ -204,17 +177,6 @@
     width: 100%;
     height: auto;
     display: block;
-  }
-
-    .footer-inner {
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-  }
-
-  .footer-right {
-    display: flex;
-    justify-content: center;
   }
 }
 

@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+
+/* footer */
+
+footer {
+  background: #554941;
+  padding: 20px 0;
+  width: 100%;
+  border-top: 1px solid #554941;
+}
+
+/* 내부 정렬 */
+.footer-inner {
+  margin: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 왼쪽 로고 */
+.footer-left a {
+  font: normal 50px "Shilla";
+  height: 40px;
+  color: #fff;
+}
+
+.footer-left p {
+  color: #fff;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+/* 가운데 텍스트 */
+.footer-center {
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #fff;
+  font-weight: normal;
+}
+
+.footer-center .footer-info {
+  margin-bottom: 8px;
+}
+
+.footer-center .copy {
+  color: #ccc;
+  font-size: 14px;
+
+}
+
+/* 오른쪽 SNS */
+.footer-right a {
+  margin-left: 10px;
+}
+
+.footer-right img {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.footer-right img:hover {
+  opacity: 1;
+}
+
+
+/* footer media */
+
+
+@media (max-width: 768px) {
+  .footer-inner {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-right {
+    display: flex;
+    justify-content: center;
+  }
+
+
+}
+
+
+@media (max-width: 480px) {
+
+  .footer-center {
+    font-size: 14px;
+  }
+
+  .footer-info>span {
+    display: block;
+  }
+}
