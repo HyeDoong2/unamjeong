@@ -11,11 +11,23 @@ a {text-decoration: none; color: inherit;}
 ul, li {list-style: none;}
 
 
-/* style */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: url('../images/bg.png') bottom center/cover no-repeat fixed;
   color: #42372f;
   font: bold 16px/1.5em "GounBatang", sans-serif;
+}
+
+body.fade {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+body.fade.show {
+  opacity: 1;
 }
 
 .container {

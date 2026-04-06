@@ -152,8 +152,13 @@ main {
   padding: 0 40px;
 }
 
+.menu-tab li a:hover {
+  color: #666;
+}
+
 .menu-wrap {
   margin-bottom: 50px;
+  
 }
 
 
@@ -236,4 +241,8 @@ display: none;
 
 .price-row .unit {
   font-size: 24px;
+}
+
+#meal {
+  scroll-margin-top: 120px;
 }

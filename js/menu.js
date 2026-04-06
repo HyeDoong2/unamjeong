@@ -1,6 +1,5 @@
-// =============================
-// 0. 배너 관련
-// =============================
+
+// 배너 관련
 
 const bannerBg = document.querySelector('.banner-bg');
 const bannerTitle = document.querySelector('.banner .title');
@@ -23,50 +22,56 @@ const bannerTitles = {
   drink: "주류"
 };
 
-// 배너 이미지 변경 (페이드)
+// 배너 이미지 변경
 function changeBanner(targetId) {
-  // 페이드 아웃
   bannerBg.style.opacity = 0;
 
   setTimeout(() => {
-    // 이미지 변경
-    bannerBg.style.background = `
-      url('${bannerImages[targetId]}') center/cover no-repeat
-    `;
-
-    // 제목 변경
+    bannerBg.style.background = `url('${bannerImages[targetId]}') center/cover no-repeat`;
     bannerTitle.textContent = bannerTitles[targetId];
-
-    // 페이드 인
     bannerBg.style.opacity = 1;
-
   }, 300);
 }
 
 
-// =============================
-// 1. 섹션 제어 (상단 탭)
-// =============================
+//  섹션 제어 (상단 탭)
+
 
 const menuTabs = document.querySelectorAll('.menu-tab a');
 const sections = document.querySelectorAll('.menu-wrap');
 
-// 초기 상태 (백숙만 보이기)
+//  URL 해시 가져오기
+const hash = window.location.hash.replace('#', '');
+
+//  기본 섹션 결정
+let initialSection = 'baeksuk';
+
+if (hash) {
+  if (hash.startsWith('meal')) {
+    initialSection = 'meal';
+  } else {
+    initialSection = hash;
+  }
+}
+
+//  섹션 초기 상태 설정
 sections.forEach(section => {
   section.style.display = 'none';
 });
-document.getElementById('baeksuk').style.display = 'block';
 
-// 초기 배너 설정
-changeBanner('baeksuk');
+document.getElementById(initialSection).style.display = 'block';
 
+//  배너 초기 설정
+changeBanner(initialSection);
+
+
+// 상단 탭 클릭
 menuTabs.forEach(tab => {
   tab.addEventListener('click', (e) => {
     e.preventDefault();
 
     const targetId = tab.getAttribute('href').replace('#', '');
 
-    // 섹션 전환
     sections.forEach(section => {
       section.style.display = 'none';
 
@@ -75,15 +80,13 @@ menuTabs.forEach(tab => {
       }
     });
 
-    // 🔥 배너 변경
     changeBanner(targetId);
   });
 });
 
 
-// =============================
-// 2. 서브탭 제어
-// =============================
+
+//  서브탭 제어
 
 const menuWraps = document.querySelectorAll('.menu-wrap');
 
@@ -92,20 +95,16 @@ menuWraps.forEach(wrap => {
   const tabs = wrap.querySelectorAll('.sub-tab li');
   const lists = wrap.querySelectorAll('.menu-list');
 
-  // 서브탭 없으면 패스
   if (tabs.length === 0) return;
 
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
 
-      // active 변경
       tabs.forEach(t => t.classList.remove('active'));
       tab.classList.add('active');
 
-      // 타겟 가져오기
       const target = tab.querySelector('button').dataset.target;
 
-      // 리스트 변경
       lists.forEach(list => {
         list.classList.remove('active');
 
@@ -113,8 +112,48 @@ menuWraps.forEach(wrap => {
           list.classList.add('active');
         }
       });
-
     });
   });
+});
 
+
+
+
+
+
+window.addEventListener("DOMContentLoaded", () => {
+  const hash = window.location.hash;
+
+  // 식사류 진입 
+  if (hash.includes("meal")) {
+
+    document.querySelectorAll('.menu-wrap').forEach(el => {
+      el.style.display = 'none';
+    });
+
+    document.getElementById('meal').style.display = 'block';
+    changeBanner('meal');
+  }
+
+  // soup 탭 강제 활성화
+  if (hash === "#meal-soup") {
+
+    // 메뉴 내용
+    document.querySelectorAll("#meal .menu-list").forEach(el => {
+      el.classList.remove("active");
+    });
+
+    document.querySelector("#soup").classList.add("active");
+
+    // 탭 버튼
+    document.querySelectorAll("#meal .sub-tab li").forEach(li => {
+      li.classList.remove("active");
+    });
+
+    document.querySelector('#meal button[data-target="soup"]')
+      .parentElement.classList.add("active");
+
+    // 스크롤 이동
+    document.querySelector("#meal").scrollIntoView();
+  }
 });
