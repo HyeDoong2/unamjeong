@@ -6,9 +6,20 @@
 
 
 /* reset */
-* {margin: 0; padding: 0;}
-a {text-decoration: none; color: inherit;}
-ul, li {list-style: none;}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
 
 
 html {
@@ -21,14 +32,6 @@ body {
   font: bold 16px/1.5em "GounBatang", sans-serif;
 }
 
-body.fade {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-body.fade.show {
-  opacity: 1;
-}
 
 .container {
   max-width: 1440px;
@@ -67,5 +70,3 @@ body.fade.show {
   font-weight: 700;
   font-display: swap;
 }
-
-

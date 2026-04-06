@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 
-@media (max-width :1171px){
+@media (max-width :1171px) {
 
   .menu-tab li a {
     font-size: 28px;
@@ -100,10 +100,10 @@
 
   /* 상단 탭 (가로 스크롤) */
   .menu-tab {
-  justify-content: center; 
-  overflow-x: auto;
-  white-space: nowrap;
-  padding: 15px 10px;
+    justify-content: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 15px 10px;
   }
 
   .menu-tab li {
@@ -129,33 +129,34 @@
   .menu-list {
     padding: 20px;
   }
-  
 
-.menu-item {
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  padding-bottom: 20px;
-}
+
+  .menu-item {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+  }
 
   .menu-item span {
     font-size: 30px;
   }
 
   .name {
-  white-space: nowrap;
-}
-.line {
-  flex: 1;
-  border-bottom: 1px dotted #aaa;
-  margin: 0 10px;
-}
-  
+    white-space: nowrap;
+  }
+
+  .line {
+    flex: 1;
+    border-bottom: 1px dotted #aaa;
+    margin: 0 10px;
+  }
+
 
   /* 가격 */
-.price {
-  white-space: nowrap;
-}
+  .price {
+    white-space: nowrap;
+  }
 
   /* 설명 */
   .desc {
@@ -187,12 +188,13 @@
 @media (max-width: 503px) {
 
   .menu-tab {
-  justify-content: flex-start; /* center → 변경 */
-  overflow-x: auto;
-  white-space: nowrap;
-  padding: 15px 10px;
+    justify-content: flex-start;
+    /* center → 변경 */
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 15px 10px;
   }
-  
+
 }
 
 
@@ -232,7 +234,7 @@
   }
 
   .menu-item {
-      line-height: 2em;
+    line-height: 2em;
   }
 
   .menu-item .name {
@@ -246,7 +248,7 @@
 
   .menu-item .price {
     font-size: 22px;
-  }  
+  }
 
 
 
@@ -266,21 +268,22 @@
 
 
 @media (max-width: 393px) {
-.menu-item span {
-  font-size: 16px;
-}
+  .menu-item span {
+    font-size: 16px;
+  }
 
-.price-box {
-  line-height: 1.5em;
-}
+  .price-box {
+    line-height: 1.5em;
+  }
+
   .menu-item .name {
     font-size: 24px;
   }
 
 
-.price-row .unit {
-  font-size: 12px;
-}
+  .price-row .unit {
+    font-size: 12px;
+  }
 
   .menu-item .price {
     font-size: 16px;
