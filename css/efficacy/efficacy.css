@@ -76,16 +76,17 @@
 
 .menu-item button {
   padding: 15px 30px;
-  border: 1px solid #333;
-  background: transparent;
   cursor: pointer;
   transition: 0.3s;
+  background-color: #554941;
+  color: #fff;
+  border: none;
 }
 
 .menu-item button:hover {
-  border: none;
-  background-color: #554941;
-  color: #fff;
+  border: 1px solid #333;
+  background: transparent;
+  color: #333;
 }
 
 /* 모달 전체 */

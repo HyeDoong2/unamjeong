@@ -182,6 +182,11 @@ display: none;
   cursor: pointer;
 }
 
+.sub-tab li a {
+  font-family: "Noto Sans", sans-serif;
+  color: #555;
+}
+
 .sub-tab li.active button {
   color: #2f5d3a;
   font-weight: bold;

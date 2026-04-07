@@ -30,7 +30,6 @@
     text-align: center;
   }
 
-  /* 메뉴 세로 전환 🔥 */
   .menu {
     flex-direction: column;
     align-items: center;
