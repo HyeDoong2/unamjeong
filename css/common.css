@@ -32,8 +32,14 @@ body {
   font: bold 16px/1.5em "GounBatang", sans-serif;
 }
 
-#info {
-  scroll-margin-top: 150px;
+section {
+  scroll-margin-top: 120px;
+}
+
+@media (max-width: 768px) {
+  section {
+    scroll-margin-top: 180px;
+  }
 }
 
 .container {
@@ -73,3 +79,5 @@ body {
   font-weight: 700;
   font-display: swap;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
