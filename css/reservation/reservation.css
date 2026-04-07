@@ -13,7 +13,7 @@ header {
 
 /* 타이틀 */
 .reserve-header h2 {
-  font: italic 500 80px "Noto Sans", sans-serif;
+  font: italic 500 60px "Noto Sans", sans-serif;
   margin-bottom: 20px;
 }
 
@@ -103,7 +103,7 @@ header {
 
 
 .reserve-btn:hover {
-  transform: translateY(-12px) scale(1.06);
+  transform: translateY(-8px) scale(1.0);
 
   box-shadow:
     0 25px 50px rgba(0, 0, 0, 0.4),
@@ -112,7 +112,7 @@ header {
 
 
 .reserve-btn:hover .icon {
-  transform: translateY(-5px) scale(1.1);
+  transform: translateY(-5px) scale(1.0);
 }
 
 /* 빛 */

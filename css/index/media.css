@@ -86,7 +86,7 @@
   }
 
   .banner .main-title {
-    font-size: 36px;
+    font-size: 50px;
   }
 
   .banner .btn {
@@ -101,7 +101,7 @@
   }
 
   .section-title span {
-    font-size: 22px;
+    font-size: 32px;
   }
 
   /* 메뉴 1개씩 */
@@ -112,6 +112,10 @@
 
   .menu-card {
     width: 90%;
+  }
+
+  .menu-card h3 {
+    font-size: 34px;
   }
 
   /* swiper */
@@ -193,13 +197,20 @@
   }
 
   .banner .main-title {
-    font-size: 28px;
+    font-size: 48px;
   }
 
   .banner .sub-title {
     font-size: 14px;
   }
 
+  .menu-card h3 {
+    font-size: 28px;
+  }
+
+  .menu-card p {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 350px) {

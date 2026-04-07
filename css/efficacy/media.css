@@ -1,0 +1,96 @@
+/* ===== 태블릿 (1024px 이하) ===== */
+@media (max-width: 1024px) {
+
+  .banner {
+    height: 500px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .menu {
+    gap: 120px;
+  }
+
+}
+
+
+/* ===== 모바일 (768px 이하) ===== */
+@media (max-width: 768px) {
+
+  /* 배너 */
+  .banner {
+    height: 400px;
+  }
+
+  .title {
+    font-size: 26px;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  /* 메뉴 세로 전환 🔥 */
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+
+  /* 가운데 선 제거 */
+  .menu::before {
+    display: none;
+  }
+
+  .menu-item {
+    max-width: 90%;
+  }
+
+  .menu-item h3 {
+    font-size: 28px;
+  }
+
+  .menu-item p {
+    font-size: 15px;
+  }
+
+  /* 버튼 */
+  .menu-item button {
+    width: 100%;
+  }
+
+  /* 모달 */
+  .modal-content {
+    width: 90%;
+    padding: 25px;
+    font-size: 16px;
+  }
+
+  .modal-content h2 {
+    font-size: 24px;
+  }
+
+}
+
+
+/* ===== 작은 모바일 (480px 이하) ===== */
+@media (max-width: 480px) {
+
+  .banner {
+    height: 320px;
+  }
+
+  .title {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  .menu-item h3 {
+    font-size: 24px;
+  }
+
+  .closing p {
+    font-size: 16px;
+  }
+
+}

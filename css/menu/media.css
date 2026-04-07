@@ -108,6 +108,11 @@
 
   .menu-tab li {
     flex: 0 0 auto;
+    color: #666
+  }
+
+  .sub-tab li.active {
+    color: rgb(12, 87, 12);
   }
 
   .menu-tab li a {

@@ -50,7 +50,7 @@ main {
 }
 
 .banner .main-title {
-  font: normal 55px "Shilla";
+  font: normal 80px "Shilla";
   margin-bottom: 20px;
   color: #fff;
   text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.5);
@@ -137,7 +137,7 @@ main {
 }
 
 .section-title span {
-  font-size: 30px;
+  font-size: 40px;
   white-space: nowrap;
 }
 
@@ -173,7 +173,7 @@ main {
   position: relative;
   padding-bottom: 10px;
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .menu-card h3::after {
@@ -185,6 +185,10 @@ main {
   width: 230px;
   height: 1px;
   background: #bbb;
+}
+
+.menu-card p {
+  font-size: 20px;
 }
 
 
