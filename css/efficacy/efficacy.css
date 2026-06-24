@@ -112,7 +112,7 @@
   border-radius: 10px;
   position: relative;
   line-height: 2em;
-  font-size: 18px
+  font-size: 18px; 
 }
 
 .modal-content h2 {
@@ -120,7 +120,7 @@
   margin-bottom: 20px;
 }
 .modal-content > ol > li {
-  list-style-type: decimal ;
+  /* list-style-type: decimal ; */
 }
 
 /* 닫기 버튼 */

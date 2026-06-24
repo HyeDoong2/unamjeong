@@ -3,8 +3,8 @@
 
 @media (max-width: 779px) {
   .reserve-btn {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     font-size: 24px;
   }
 
@@ -25,12 +25,12 @@
 }
 
 @media (max-width: 619px) {
-  .reserve-btn {
-    width: 180px;
-    height: 180px;
-    font-size: 22px;
-  }
-
+/*   .reserve-btn { */
+/*     width: 200px; */
+/*     height: 200px; */
+/*     font-size: 22px; */
+/*   } */
+/*  */
   .reserve-btn .icon img {
     margin-bottom: 30px;
   }
